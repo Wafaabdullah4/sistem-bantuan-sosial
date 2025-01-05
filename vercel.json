@@ -17,7 +17,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://your.url.from.vercel.app",
+        "APP_URL": "https://sistem-bantuan-sosial-uix7-fv3wtm2fh.vercel.app",
         "APP_KEY": "base64:vQe735H9iil3YpT47/RcIGA2xDUtlGSRTceQ5XEIbaI=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
