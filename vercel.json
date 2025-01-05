@@ -19,17 +19,28 @@
         "APP_DEBUG": "true",
         "APP_URL": "https://sistem-bantuan-sosial-uix7-fv3wtm2fh.vercel.app",
         "APP_KEY": "base64:vQe735H9iil3YpT47/RcIGA2xDUtlGSRTceQ5XEIbaI=",
-
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
     },
-        "outputDirectory": "public"
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "public/**",
+            "use": "@vercel/static"
+        }
+    ],
+    "scripts": {
+        "build": "npm install && npm run production"
+    },
+    "outputDirectory": "public"
 }
